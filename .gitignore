@@ -1,0 +1,12 @@
+# vscode
+.vscode
+
+# eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+*.idea/
+*.iml
+*.iws
