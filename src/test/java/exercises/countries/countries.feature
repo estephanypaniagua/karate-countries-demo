@@ -1,4 +1,4 @@
-Feature: Get Countries tests
+Feature: Countries tests
 
 Background:
   Given url urlBase
