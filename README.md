@@ -4,7 +4,7 @@
 
 This is a project that call the free layer to APICountryLayer for make some tests using karate framework. It also has a pipeline for running the tests using [Github Actions](https://github.com/estephanypaniagua/karate-countries-demo/actions) and [Github Pages](https://estephanypaniagua.github.io/karate-countries-demo/karate-summary.html) 
 
-You can see the test results here: https://github.com/estephanypaniagua/karate-countries-demo/actions
+You can see the test results here: https://estephanypaniagua.github.io/karate-countries-demo/karate-summary.html
 
 ## Coverage
 This project covers the following scenarios and practices:
