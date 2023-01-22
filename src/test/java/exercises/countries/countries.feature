@@ -4,6 +4,7 @@ Feature: Countries tests
     Given url urlBase
     * java.lang.Thread.sleep(1500)
     * def res_get_alpha = read('../responses/countryByAlphaCode.json')
+    * def res_get_error = read('../responses/error404.json')
 
 
   Scenario Outline: Get information of <alphaCode>
@@ -20,21 +21,22 @@ Feature: Countries tests
       | 'DE'      | 'Germany'                                              |
       | 'GB'      | 'United Kingdom of Great Britain and Northern Ireland' |
 
-  Scenario Outline: Get information of inexistent countries - <country>
+  Scenario Outline: Get information of inexistent countries - <state>
     Given path pathName
     And path <country>
     And param access_key = apiKeyValue
     When method get
-    Then status 404
-    And match response.message == 'Not Found'
+    Then match response.message == 'Not Found'
+    And match response == res_get_error
+    And status 404
 
     Examples:
-      | country |
-      | 'ioeydio diowad' |
-      | '37432749032340' |
-      | 'dd-+423-dwdwe{}'|
+      | country          | state                     |
+      | 'ioeydio diowad' | 'alphabetic'              |
+      | '37432749032340' | 'numeric'                 |
+      | 'dd-+423-dwdwe{}'| 'with special characters' |
 
-  Scenario: create a new country
+  Scenario: Create a new country
     * def country =
       """
       {
@@ -48,3 +50,4 @@ Feature: Countries tests
     And request country
     When method post
     Then status 201
+    And match response.name == "Test Country"
