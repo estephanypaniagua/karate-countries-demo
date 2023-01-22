@@ -31,6 +31,14 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
         run: mvn --batch-mode --update-snapshots verify
 
+      - name: Generate 404 file
+        run: |
+          cat <<EOT > target/karate-reports/404.md
+          ---
+          permalink: /karate-summary.html
+          ---
+          EOT
+
       - name: Save report
         uses: actions/upload-pages-artifact@v1
         with:
