@@ -34,5 +34,5 @@ jobs:
       - name: Save report
         uses: actions/upload-artifact@v3
         with:
-          name: report-${{ github.ref }}
+          name: report-${{ github.run_id }}
           path: target/karate-reports
