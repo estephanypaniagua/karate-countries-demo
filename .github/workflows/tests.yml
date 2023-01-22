@@ -32,9 +32,8 @@ jobs:
         run: mvn --batch-mode --update-snapshots verify
 
       - name: Save report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: github-pages
           path: target/karate-reports
 
   deploy:
