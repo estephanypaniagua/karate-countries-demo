@@ -39,8 +39,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">6</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">7</div>
     </div>
   </div>
   <div id="nav-env">
@@ -50,27 +50,27 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2023-01-21 04:18:49 PM</div>
+    <div>2023-01-21 05:22:37 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[1.1:16]"><span>[1.1:16]</span> <span>Get information of &#39;US&#39;</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[1.2:17]"><span>[1.2:17]</span> <span>Get information of &#39;DE&#39;</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[1.3:18]"><span>[1.3:18]</span> <span>Get information of &#39;GB&#39;</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[2.1:30]"><span>[2.1:30]</span> <span>Get information of inexistent countries - &#39;ioeydio diowad&#39;</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[2.2:31]"><span>[2.2:31]</span> <span>Get information of inexistent countries - &#39;37432749032340&#39;</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[2.3:32]"><span>[2.3:32]</span> <span>Get information of inexistent countries - &#39;dd-+423-dwdwe{}&#39;</span></a>
           </div>
           <div class="nav-item failed">
@@ -99,8 +99,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3873</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>3603</span>
             </div>
           </div>
           <div class="step-row">
@@ -132,7 +132,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.4">16:18:33.648 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.4">17:22:23.122 karate.env system property was: null 
 </div>   
 
   
@@ -152,7 +152,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1500)</span>
       </div>
     </div>
-    <div class="time-cell passed">1543</div>
+    <div class="time-cell passed">1528</div>
   </div>
 
    
@@ -180,7 +180,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path pathAlpha</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -236,7 +236,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>param access_key = apiKeyValue</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -264,7 +264,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">2281</div>
+    <div class="time-cell passed">2032</div>
   </div>
 
    
@@ -273,33 +273,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.11">16:18:37.016 request:
-1 &gt; GET http://api.countrylayer.com/v2/alpha/US?access_key=3ca71cebe28690b0ed7a493930050cbe
+  <div class="preformatted" data-parent="1.11">17:22:26.458 request:
+1 &gt; GET http://api.countrylayer.com/v2/alpha/US?access_key=854e30999f5832e841927acd180966a1
 1 &gt; Host: api.countrylayer.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:18:37.512 response time in milliseconds: 492
-1 &lt; 200
-1 &lt; content-type: application/json
+17:22:26.735 response time in milliseconds: 272
+1 &lt; 429
+1 &lt; date: Sat, 21 Jan 2023 22:25:04 GMT
+1 &lt; content-type: application/json; Charset=UTF-8
 1 &lt; transfer-encoding: chunked
-1 &lt; x-rate-limit-reset: 1674336076
-1 &lt; date: Sat, 21 Jan 2023 21:21:15 GMT
-1 &lt; cache-control: no-cache, private
-1 &lt; x-request-time: 0.021
-1 &lt; x-request-time: 0.054
-1 &lt; x-apilayer-transaction-id: 76588eaa-d79d-4c03-8ff1-ef6febc780b9
+1 &lt; x-apilayer-transaction-id: 688e5f9f-48d7-4f19-9b22-3e749ed2f2f0
+1 &lt; access-control-allow-methods: GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
 1 &lt; access-control-allow-origin: *
-1 &lt; access-control-allow-methods: GET, POST, HEAD, OPTIONS
-1 &lt; access-control-allow-headers: *
-1 &lt; x-rate-limit: 0
-1 &lt; x-rate-limit-remaining: 0
-1 &lt; x-quota-limit: 50
-1 &lt; x-quota-remaining: 6
-1 &lt; x-increment-usage: 1
-{&quot;name&quot;:&quot;United States of America&quot;,&quot;topLevelDomain&quot;:[&quot;.us&quot;],&quot;alpha2Code&quot;:&quot;US&quot;,&quot;alpha3Code&quot;:&quot;USA&quot;,&quot;callingCodes&quot;:[&quot;1&quot;],&quot;capital&quot;:&quot;Washington, D.C.&quot;,&quot;altSpellings&quot;:[&quot;US&quot;,&quot;USA&quot;,&quot;United States of America&quot;],&quot;region&quot;:&quot;Americas&quot;}
+{&quot;error&quot;:{&quot;code&quot;:&quot;usage_limit_reached&quot;,&quot;message&quot;:&quot;Your monthly usage limit has been reached. Please upgrade your Subscription Plan.&quot;}}
 
 </div>   
 
@@ -314,13 +304,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="1.12">
-      <div class="step-ref passed">12</div>
+      <div class="step-ref failed">12</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>match response.name == &#39;United States of America&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">42</div>
+    <div class="time-cell failed">38</div>
   </div>
 
    
@@ -329,7 +319,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="1.12">17:22:26.847 classpath:exercises/countries/countries.feature:12
+Then match response.name == &#39;United States of America&#39;
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  &#39;#notpresent&#39;
+  &#39;United States of America&#39;
+
+classpath:exercises/countries/countries.feature:12
+</div>   
 
   
 
@@ -342,13 +340,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="1.13">
-      <div class="step-ref passed">13</div>
+      <div class="step-ref skipped">13</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -376,8 +374,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1788</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1728</span>
             </div>
           </div>
           <div class="step-row">
@@ -409,7 +407,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.4">16:18:37.637 karate.env system property was: null 
+  <div class="preformatted" data-parent="2.4">17:22:26.888 karate.env system property was: null 
 </div>   
 
   
@@ -429,7 +427,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1500)</span>
       </div>
     </div>
-    <div class="time-cell passed">1516</div>
+    <div class="time-cell passed">1506</div>
   </div>
 
    
@@ -541,7 +539,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">265</div>
+    <div class="time-cell passed">215</div>
   </div>
 
    
@@ -550,33 +548,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.11">16:18:39.165 request:
-1 &gt; GET http://api.countrylayer.com/v2/alpha/DE?access_key=3ca71cebe28690b0ed7a493930050cbe
+  <div class="preformatted" data-parent="2.11">17:22:28.405 request:
+1 &gt; GET http://api.countrylayer.com/v2/alpha/DE?access_key=854e30999f5832e841927acd180966a1
 1 &gt; Host: api.countrylayer.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:18:39.424 response time in milliseconds: 258
-1 &lt; 200
-1 &lt; content-type: application/json
+17:22:28.616 response time in milliseconds: 210
+1 &lt; 429
+1 &lt; date: Sat, 21 Jan 2023 22:25:06 GMT
+1 &lt; content-type: application/json; Charset=UTF-8
 1 &lt; transfer-encoding: chunked
-1 &lt; x-rate-limit-reset: 1674336077
-1 &lt; date: Sat, 21 Jan 2023 21:21:17 GMT
-1 &lt; cache-control: no-cache, private
-1 &lt; x-request-time: 0.012
-1 &lt; x-request-time: 0.055
-1 &lt; x-apilayer-transaction-id: 36563c25-e683-4eb3-ba8a-dfe6ee56b0e7
+1 &lt; x-apilayer-transaction-id: 756f60af-9882-42dc-bf26-7ef3fc254762
+1 &lt; access-control-allow-methods: GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
 1 &lt; access-control-allow-origin: *
-1 &lt; access-control-allow-methods: GET, POST, HEAD, OPTIONS
-1 &lt; access-control-allow-headers: *
-1 &lt; x-rate-limit: 0
-1 &lt; x-rate-limit-remaining: 0
-1 &lt; x-quota-limit: 50
-1 &lt; x-quota-remaining: 5
-1 &lt; x-increment-usage: 1
-{&quot;name&quot;:&quot;Germany&quot;,&quot;topLevelDomain&quot;:[&quot;.de&quot;],&quot;alpha2Code&quot;:&quot;DE&quot;,&quot;alpha3Code&quot;:&quot;DEU&quot;,&quot;callingCodes&quot;:[&quot;49&quot;],&quot;capital&quot;:&quot;Berlin&quot;,&quot;altSpellings&quot;:[&quot;DE&quot;,&quot;Federal Republic of Germany&quot;,&quot;Bundesrepublik Deutschland&quot;],&quot;region&quot;:&quot;Europe&quot;}
+{&quot;error&quot;:{&quot;code&quot;:&quot;usage_limit_reached&quot;,&quot;message&quot;:&quot;Your monthly usage limit has been reached. Please upgrade your Subscription Plan.&quot;}}
 
 </div>   
 
@@ -591,13 +579,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="2.12">
-      <div class="step-ref passed">12</div>
+      <div class="step-ref failed">12</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>match response.name == &#39;Germany&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell failed">2</div>
   </div>
 
    
@@ -606,7 +594,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="2.12">17:22:28.621 classpath:exercises/countries/countries.feature:12
+Then match response.name == &#39;Germany&#39;
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  &#39;#notpresent&#39;
+  &#39;Germany&#39;
+
+classpath:exercises/countries/countries.feature:12
+</div>   
 
   
 
@@ -619,13 +615,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="2.13">
-      <div class="step-ref passed">13</div>
+      <div class="step-ref skipped">13</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -653,8 +649,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1777</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1738</span>
             </div>
           </div>
           <div class="step-row">
@@ -677,7 +673,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url urlBase</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -686,7 +682,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.4">16:18:39.440 karate.env system property was: null 
+  <div class="preformatted" data-parent="3.4">17:22:28.644 karate.env system property was: null 
 </div>   
 
   
@@ -706,7 +702,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1500)</span>
       </div>
     </div>
-    <div class="time-cell passed">1508</div>
+    <div class="time-cell passed">1517</div>
   </div>
 
    
@@ -734,7 +730,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path pathAlpha</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -818,7 +814,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">264</div>
+    <div class="time-cell passed">217</div>
   </div>
 
    
@@ -827,33 +823,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.11">16:18:40.959 request:
-1 &gt; GET http://api.countrylayer.com/v2/alpha/GB?access_key=3ca71cebe28690b0ed7a493930050cbe
+  <div class="preformatted" data-parent="3.11">17:22:30.167 request:
+1 &gt; GET http://api.countrylayer.com/v2/alpha/GB?access_key=854e30999f5832e841927acd180966a1
 1 &gt; Host: api.countrylayer.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:18:41.216 response time in milliseconds: 257
-1 &lt; 200
-1 &lt; content-type: application/json
+17:22:30.381 response time in milliseconds: 214
+1 &lt; 429
+1 &lt; date: Sat, 21 Jan 2023 22:25:08 GMT
+1 &lt; content-type: application/json; Charset=UTF-8
 1 &lt; transfer-encoding: chunked
-1 &lt; x-rate-limit-reset: 1674336079
-1 &lt; date: Sat, 21 Jan 2023 21:21:18 GMT
-1 &lt; cache-control: no-cache, private
-1 &lt; x-request-time: 0.018
-1 &lt; x-request-time: 0.053
-1 &lt; x-apilayer-transaction-id: a1556893-3ede-4da7-9e54-d0085d7015c0
+1 &lt; x-apilayer-transaction-id: 0db4dd39-5b26-44f3-8f73-a39961571b02
+1 &lt; access-control-allow-methods: GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
 1 &lt; access-control-allow-origin: *
-1 &lt; access-control-allow-methods: GET, POST, HEAD, OPTIONS
-1 &lt; access-control-allow-headers: *
-1 &lt; x-rate-limit: 0
-1 &lt; x-rate-limit-remaining: 0
-1 &lt; x-quota-limit: 50
-1 &lt; x-quota-remaining: 4
-1 &lt; x-increment-usage: 1
-{&quot;name&quot;:&quot;United Kingdom of Great Britain and Northern Ireland&quot;,&quot;topLevelDomain&quot;:[&quot;.uk&quot;],&quot;alpha2Code&quot;:&quot;GB&quot;,&quot;alpha3Code&quot;:&quot;GBR&quot;,&quot;callingCodes&quot;:[&quot;44&quot;],&quot;capital&quot;:&quot;London&quot;,&quot;altSpellings&quot;:[&quot;GB&quot;,&quot;UK&quot;,&quot;Great Britain&quot;],&quot;region&quot;:&quot;Europe&quot;}
+{&quot;error&quot;:{&quot;code&quot;:&quot;usage_limit_reached&quot;,&quot;message&quot;:&quot;Your monthly usage limit has been reached. Please upgrade your Subscription Plan.&quot;}}
 
 </div>   
 
@@ -868,13 +854,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="3.12">
-      <div class="step-ref passed">12</div>
+      <div class="step-ref failed">12</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>match response.name == &#39;United Kingdom of Great Britain and Northern Ireland&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell failed">2</div>
   </div>
 
    
@@ -883,7 +869,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="3.12">17:22:30.386 classpath:exercises/countries/countries.feature:12
+Then match response.name == &#39;United Kingdom of Great Britain and Northern Ireland&#39;
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  &#39;#notpresent&#39;
+  &#39;United Kingdom of Great Britain and Northern Ireland&#39;
+
+classpath:exercises/countries/countries.feature:12
+</div>   
 
   
 
@@ -896,13 +890,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="3.13">
-      <div class="step-ref passed">13</div>
+      <div class="step-ref skipped">13</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -930,8 +924,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1959</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1725</span>
             </div>
           </div>
           <div class="step-row">
@@ -963,7 +957,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.4">16:18:41.243 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.4">17:22:30.413 karate.env system property was: null 
 </div>   
 
   
@@ -983,7 +977,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1500)</span>
       </div>
     </div>
-    <div class="time-cell passed">1509</div>
+    <div class="time-cell passed">1503</div>
   </div>
 
    
@@ -1095,7 +1089,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">446</div>
+    <div class="time-cell passed">217</div>
   </div>
 
    
@@ -1104,31 +1098,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.24">16:18:42.763 request:
-1 &gt; GET http://api.countrylayer.com/v2/name/ioeydio%20diowad?access_key=3ca71cebe28690b0ed7a493930050cbe
+  <div class="preformatted" data-parent="1.24">17:22:31.930 request:
+1 &gt; GET http://api.countrylayer.com/v2/name/ioeydio%20diowad?access_key=854e30999f5832e841927acd180966a1
 1 &gt; Host: api.countrylayer.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:18:43.202 response time in milliseconds: 437
-1 &lt; 404
-1 &lt; content-type: application/json
+17:22:32.141 response time in milliseconds: 210
+1 &lt; 429
+1 &lt; date: Sat, 21 Jan 2023 22:25:09 GMT
+1 &lt; content-type: application/json; Charset=UTF-8
 1 &lt; transfer-encoding: chunked
-1 &lt; x-rate-limit-reset: 1674336080
-1 &lt; date: Sat, 21 Jan 2023 21:21:20 GMT
-1 &lt; cache-control: no-cache, private
-1 &lt; x-apilayer-transaction-id: e616ffe0-cb29-4ed9-8196-021ddda13c03
+1 &lt; x-apilayer-transaction-id: a9be0715-ec88-465b-bd43-6c3a59a417ca
+1 &lt; access-control-allow-methods: GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
 1 &lt; access-control-allow-origin: *
-1 &lt; access-control-allow-methods: GET, POST, HEAD, OPTIONS
-1 &lt; access-control-allow-headers: *
-1 &lt; x-rate-limit: 0
-1 &lt; x-rate-limit-remaining: 0
-1 &lt; x-quota-limit: 50
-1 &lt; x-quota-remaining: 3
-1 &lt; x-increment-usage: 1
-{&quot;status&quot;:404,&quot;message&quot;:&quot;Not Found&quot;}
+{&quot;error&quot;:{&quot;code&quot;:&quot;usage_limit_reached&quot;,&quot;message&quot;:&quot;Your monthly usage limit has been reached. Please upgrade your Subscription Plan.&quot;}}
 
 </div>   
 
@@ -1143,13 +1129,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="1.25">
-      <div class="step-ref passed">25</div>
+      <div class="step-ref failed">25</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 404</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -1158,7 +1144,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="1.25">17:22:32.144 classpath:exercises/countries/countries.feature:25
+Then status 404
+status code was: 429, expected: 404, response time in milliseconds: 210, url: http://api.countrylayer.com/v2/name/ioeydio%20diowad?access_key=854e30999f5832e841927acd180966a1, response: 
+{&quot;error&quot;:{&quot;code&quot;:&quot;usage_limit_reached&quot;,&quot;message&quot;:&quot;Your monthly usage limit has been reached. Please upgrade your Subscription Plan.&quot;}}
+classpath:exercises/countries/countries.feature:25
+</div>   
 
   
 
@@ -1171,13 +1162,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="1.26">
-      <div class="step-ref passed">26</div>
+      <div class="step-ref skipped">26</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.message == &#39;Not Found&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1205,8 +1196,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1948</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1736</span>
             </div>
           </div>
           <div class="step-row">
@@ -1238,7 +1229,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.4">16:18:43.229 karate.env system property was: null 
+  <div class="preformatted" data-parent="2.4">17:22:32.170 karate.env system property was: null 
 </div>   
 
   
@@ -1258,7 +1249,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1500)</span>
       </div>
     </div>
-    <div class="time-cell passed">1503</div>
+    <div class="time-cell passed">1513</div>
   </div>
 
    
@@ -1286,7 +1277,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path pathName</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1342,7 +1333,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>param access_key = apiKeyValue</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1370,7 +1361,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">442</div>
+    <div class="time-cell passed">219</div>
   </div>
 
    
@@ -1379,31 +1370,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.24">16:18:44.743 request:
-1 &gt; GET http://api.countrylayer.com/v2/name/37432749032340?access_key=3ca71cebe28690b0ed7a493930050cbe
+  <div class="preformatted" data-parent="2.24">17:22:33.694 request:
+1 &gt; GET http://api.countrylayer.com/v2/name/37432749032340?access_key=854e30999f5832e841927acd180966a1
 1 &gt; Host: api.countrylayer.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:18:45.177 response time in milliseconds: 434
-1 &lt; 404
-1 &lt; content-type: application/json
+17:22:33.908 response time in milliseconds: 213
+1 &lt; 429
+1 &lt; date: Sat, 21 Jan 2023 22:25:11 GMT
+1 &lt; content-type: application/json; Charset=UTF-8
 1 &lt; transfer-encoding: chunked
-1 &lt; x-rate-limit-reset: 1674336083
-1 &lt; date: Sat, 21 Jan 2023 21:21:22 GMT
-1 &lt; cache-control: no-cache, private
-1 &lt; x-apilayer-transaction-id: a8c0695d-2a0e-4467-b5ad-72f2f684edf2
+1 &lt; x-apilayer-transaction-id: 536dc6e5-20f0-4fbf-9e80-3a4290855d82
+1 &lt; access-control-allow-methods: GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
 1 &lt; access-control-allow-origin: *
-1 &lt; access-control-allow-methods: GET, POST, HEAD, OPTIONS
-1 &lt; access-control-allow-headers: *
-1 &lt; x-rate-limit: 0
-1 &lt; x-rate-limit-remaining: 0
-1 &lt; x-quota-limit: 50
-1 &lt; x-quota-remaining: 2
-1 &lt; x-increment-usage: 1
-{&quot;status&quot;:404,&quot;message&quot;:&quot;Not Found&quot;}
+{&quot;error&quot;:{&quot;code&quot;:&quot;usage_limit_reached&quot;,&quot;message&quot;:&quot;Your monthly usage limit has been reached. Please upgrade your Subscription Plan.&quot;}}
 
 </div>   
 
@@ -1418,13 +1401,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="2.25">
-      <div class="step-ref passed">25</div>
+      <div class="step-ref failed">25</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 404</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -1433,7 +1416,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="2.25">17:22:33.912 classpath:exercises/countries/countries.feature:25
+Then status 404
+status code was: 429, expected: 404, response time in milliseconds: 213, url: http://api.countrylayer.com/v2/name/37432749032340?access_key=854e30999f5832e841927acd180966a1, response: 
+{&quot;error&quot;:{&quot;code&quot;:&quot;usage_limit_reached&quot;,&quot;message&quot;:&quot;Your monthly usage limit has been reached. Please upgrade your Subscription Plan.&quot;}}
+classpath:exercises/countries/countries.feature:25
+</div>   
 
   
 
@@ -1446,13 +1434,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="2.26">
-      <div class="step-ref passed">26</div>
+      <div class="step-ref skipped">26</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.message == &#39;Not Found&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1480,8 +1468,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1918</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1729</span>
             </div>
           </div>
           <div class="step-row">
@@ -1504,7 +1492,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url urlBase</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1513,7 +1501,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.4">16:18:45.207 karate.env system property was: null 
+  <div class="preformatted" data-parent="3.4">17:22:33.931 karate.env system property was: null 
 </div>   
 
   
@@ -1533,7 +1521,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1500)</span>
       </div>
     </div>
-    <div class="time-cell passed">1514</div>
+    <div class="time-cell passed">1511</div>
   </div>
 
    
@@ -1617,7 +1605,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>param access_key = apiKeyValue</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1645,7 +1633,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">400</div>
+    <div class="time-cell passed">215</div>
   </div>
 
    
@@ -1654,31 +1642,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.24">16:18:46.732 request:
-1 &gt; GET http://api.countrylayer.com/v2/name/dd-+423-dwdwe%7B%7D?access_key=3ca71cebe28690b0ed7a493930050cbe
+  <div class="preformatted" data-parent="3.24">17:22:35.450 request:
+1 &gt; GET http://api.countrylayer.com/v2/name/dd-+423-dwdwe%7B%7D?access_key=854e30999f5832e841927acd180966a1
 1 &gt; Host: api.countrylayer.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:18:47.127 response time in milliseconds: 394
-1 &lt; 404
-1 &lt; content-type: application/json
+17:22:35.661 response time in milliseconds: 210
+1 &lt; 429
+1 &lt; date: Sat, 21 Jan 2023 22:25:13 GMT
+1 &lt; content-type: application/json; Charset=UTF-8
 1 &lt; transfer-encoding: chunked
-1 &lt; x-rate-limit-reset: 1674336084
-1 &lt; date: Sat, 21 Jan 2023 21:21:24 GMT
-1 &lt; cache-control: no-cache, private
-1 &lt; x-apilayer-transaction-id: e58cbc93-6cf0-43fe-a59c-457399f70f6c
+1 &lt; x-apilayer-transaction-id: fa23ba13-66c6-4c9e-80ce-b4df03f61962
+1 &lt; access-control-allow-methods: GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
 1 &lt; access-control-allow-origin: *
-1 &lt; access-control-allow-methods: GET, POST, HEAD, OPTIONS
-1 &lt; access-control-allow-headers: *
-1 &lt; x-rate-limit: 0
-1 &lt; x-rate-limit-remaining: 0
-1 &lt; x-quota-limit: 50
-1 &lt; x-quota-remaining: 1
-1 &lt; x-increment-usage: 1
-{&quot;status&quot;:404,&quot;message&quot;:&quot;Not Found&quot;}
+{&quot;error&quot;:{&quot;code&quot;:&quot;usage_limit_reached&quot;,&quot;message&quot;:&quot;Your monthly usage limit has been reached. Please upgrade your Subscription Plan.&quot;}}
 
 </div>   
 
@@ -1693,13 +1673,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="3.25">
-      <div class="step-ref passed">25</div>
+      <div class="step-ref failed">25</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 404</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -1708,7 +1688,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="3.25">17:22:35.664 classpath:exercises/countries/countries.feature:25
+Then status 404
+status code was: 429, expected: 404, response time in milliseconds: 210, url: http://api.countrylayer.com/v2/name/dd-+423-dwdwe%7B%7D?access_key=854e30999f5832e841927acd180966a1, response: 
+{&quot;error&quot;:{&quot;code&quot;:&quot;usage_limit_reached&quot;,&quot;message&quot;:&quot;Your monthly usage limit has been reached. Please upgrade your Subscription Plan.&quot;}}
+classpath:exercises/countries/countries.feature:25
+</div>   
 
   
 
@@ -1721,13 +1706,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="3.26">
-      <div class="step-ref passed">26</div>
+      <div class="step-ref skipped">26</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.message == &#39;Not Found&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1756,7 +1741,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>1854</span>
+              <span>ms:</span>&nbsp;<span>1809</span>
             </div>
           </div>
           <div class="step-row">
@@ -1788,7 +1773,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">16:18:47.142 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">17:22:35.682 karate.env system property was: null 
 </div>   
 
   
@@ -1808,7 +1793,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1500)</span>
       </div>
     </div>
-    <div class="time-cell passed">1507</div>
+    <div class="time-cell passed">1516</div>
   </div>
 
    
@@ -1896,7 +1881,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>param access_key = apiKeyValue</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1924,7 +1909,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request country</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1952,7 +1937,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">342</div>
+    <div class="time-cell passed">288</div>
   </div>
 
    
@@ -1961,8 +1946,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.46">16:18:48.743 request:
-1 &gt; POST http://api.countrylayer.com/v2/all?access_key=3ca71cebe28690b0ed7a493930050cbe
+  <div class="preformatted" data-parent="0.46">17:22:37.273 request:
+1 &gt; POST http://api.countrylayer.com/v2/all?access_key=854e30999f5832e841927acd180966a1
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 62
 1 &gt; Host: api.countrylayer.com
@@ -1971,23 +1956,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;Test Country&quot;,&quot;alpha2_code&quot;:&quot;TC&quot;,&quot;alpha3_code&quot;:&quot;TCY&quot;}
 
-16:18:48.993 response time in milliseconds: 250
-1 &lt; 500
-1 &lt; content-type: application/json
+17:22:37.491 response time in milliseconds: 218
+1 &lt; 429
+1 &lt; date: Sat, 21 Jan 2023 22:25:15 GMT
+1 &lt; content-type: application/json; Charset=UTF-8
 1 &lt; transfer-encoding: chunked
-1 &lt; x-rate-limit-reset: 1674336087
-1 &lt; date: Sat, 21 Jan 2023 21:21:26 GMT
-1 &lt; cache-control: no-cache, private
-1 &lt; x-apilayer-transaction-id: a5bf5418-3285-42b3-acc3-952281c92a21
+1 &lt; x-apilayer-transaction-id: e8cb7ef2-7679-498f-bdce-96e0c9c732b0
+1 &lt; access-control-allow-methods: GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
 1 &lt; access-control-allow-origin: *
-1 &lt; access-control-allow-methods: GET, POST, HEAD, OPTIONS
-1 &lt; access-control-allow-headers: *
-1 &lt; x-rate-limit: 0
-1 &lt; x-rate-limit-remaining: 0
-1 &lt; x-quota-limit: 50
-1 &lt; x-quota-remaining: 0
-1 &lt; x-increment-usage: 0
-{&quot;error&quot;:{&quot;code&quot;:&quot;unexpected_error&quot;,&quot;message&quot;:&quot;Something went wrong in our servers, please contact support@apilayer.com&quot;}}
+{&quot;error&quot;:{&quot;code&quot;:&quot;usage_limit_reached&quot;,&quot;message&quot;:&quot;Your monthly usage limit has been reached. Please upgrade your Subscription Plan.&quot;}}
 
 </div>   
 
@@ -2017,10 +1994,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.47">16:18:48.993 classpath:exercises/countries/countries.feature:47
+  <div class="preformatted" data-parent="0.47">17:22:37.495 classpath:exercises/countries/countries.feature:47
 Then status 201
-status code was: 500, expected: 201, response time in milliseconds: 250, url: http://api.countrylayer.com/v2/all?access_key=3ca71cebe28690b0ed7a493930050cbe, response: 
-{&quot;error&quot;:{&quot;code&quot;:&quot;unexpected_error&quot;,&quot;message&quot;:&quot;Something went wrong in our servers, please contact support@apilayer.com&quot;}}
+status code was: 429, expected: 201, response time in milliseconds: 218, url: http://api.countrylayer.com/v2/all?access_key=854e30999f5832e841927acd180966a1, response: 
+{&quot;error&quot;:{&quot;code&quot;:&quot;usage_limit_reached&quot;,&quot;message&quot;:&quot;Your monthly usage limit has been reached. Please upgrade your Subscription Plan.&quot;}}
 classpath:exercises/countries/countries.feature:47
 </div>   
 

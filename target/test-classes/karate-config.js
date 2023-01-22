@@ -1,4 +1,6 @@
 function fn() {
+  var apiKeyValue = java.lang.System.getenv("API_KEY");
+
   var env = karate.env; // get java system property 'karate.env'
   karate.log('karate.env system property was:', env);
   if (!env) {
@@ -9,8 +11,7 @@ function fn() {
     pathAll: 'all',
     pathAlpha: 'alpha',
     pathName: 'name',
-    apiKeyName: 'access_key',
-    apiKeyValue: '3ca71cebe28690b0ed7a493930050cbe',
+    apiKeyValue: apiKeyValue,
   };
   if (env == 'stage') {
     // over-ride only those that need to be
