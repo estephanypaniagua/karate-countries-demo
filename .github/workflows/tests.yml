@@ -12,7 +12,7 @@ defaults:
     shell: bash
 
 jobs:
-  run-tests:
+  build-run-tests:
     name: Run tests with Karate DSL
     runs-on: ubuntu-latest
     steps:
@@ -34,5 +34,23 @@ jobs:
       - name: Save report
         uses: actions/upload-artifact@v3
         with:
-          name: report-${{ github.run_id }}
+          name: github-pages
           path: target/karate-reports
+
+  deploy:
+    name: Deploy to Github Pages
+    runs-on: ubuntu-latest
+    needs: build-run-tests
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
