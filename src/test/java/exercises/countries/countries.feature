@@ -1,8 +1,10 @@
 Feature: Countries tests
 
-Background:
-  Given url urlBase
-  * java.lang.Thread.sleep(1500)
+  Background:
+    Given url urlBase
+    * java.lang.Thread.sleep(1500)
+    * def res_get_alpha = read('../responses/countryByAlphaCode.json')
+
 
   Scenario Outline: Get information of <alphaCode>
     Given path pathAlpha
@@ -10,6 +12,7 @@ Background:
     And param access_key = apiKeyValue
     When method get
     Then match response.name == <country>
+    And match response == res_get_alpha
     And status 200
     Examples:
       | alphaCode | country                                                |
